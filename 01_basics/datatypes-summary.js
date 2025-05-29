@@ -16,4 +16,27 @@ let referenceArray = [1, 2, 3, 4, 5]; // array
 let referenceObject = { name: "Alice", age: 30 }; // object
 let referenceFunction = function() { console.log("Hello from function!"); }; // function
 
-console.log(typeof noVariable); // undefined
+// console.log(typeof noVariable); // undefined
+
+// ++++++++++++++++++++++++++++++++
+
+// Stack (Primitive types), Heap (Reference types)
+
+let firstName = "Prince"
+
+let name = firstName
+name = "Prince Sharma"
+
+// console.log(firstName)
+// console.log(name)
+
+let person = {
+    firstName: "Prince",
+    lastName: "Sharma"
+};
+
+let anotherPerson = person;
+anotherPerson.firstName = "John";
+
+console.log(person.firstName); // John
+console.log(anotherPerson.firstName); // John
