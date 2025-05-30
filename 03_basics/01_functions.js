@@ -48,3 +48,43 @@ function loginMessageWithDefault(userName = "Guest")
 
 const loginMessageWithDefaultUser = loginMessageWithDefault();
 // console.log(loginMessageWithDefaultUser); // User Guest logged in successfully
+
+function calculateCartTotal(price)
+{
+    return price
+}
+
+// console.log(calculateCartTotal(100)); // 100
+// console.log(calculateCartTotal(100, 200, 300)); // 100
+
+function calculateCartTotalWithRest(...prices)
+{
+    let total = 0;
+    for (let price of prices) {
+        total += price;
+    }
+
+    return total;
+}
+
+// console.log(calculateCartTotalWithRest(100, 200, 300)); // 600
+
+const user = {name: "PRINCE SHARMA", age: 20, isActive: true};
+
+function printUserDetails(anyObject)
+{
+    console.log(`Name is ${anyObject.name} and Age is ${anyObject.age}`);
+}
+
+// printUserDetails(user); // Name is PRINCE SHARMA and Age is 20
+// printUserDetails({name: "John Doe", age: 25}); // Name is John Doe and Age is 25
+
+const myNewArray = [100, 200, 300, 400, 500];
+
+function returnSecondValue(array)
+{
+    return array[1];
+}
+
+// console.log(returnSecondValue(myNewArray)); // 200
+// console.log(returnSecondValue([100, 200, 300, 400, 500])); // 200
