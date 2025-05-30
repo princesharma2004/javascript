@@ -39,3 +39,17 @@ const users = [
 
 // console.log(tinderUser.hasOwnProperty("name")); // true
 // console.log(tinderUser.hasOwnProperty("Location")); // false
+
+const cource ={
+    courceName: "JavaScript",
+    courceDuration: "3 months",
+    courcePrice: 1000,
+}
+
+// console.log(cource.courceName); // JavaScript
+
+const { courceName } = cource;
+// console.log(courceName); // JavaScript
+
+const { courceDuration: duration } = cource;
+// console.log(duration); // 3 months
